@@ -18,13 +18,46 @@ const map = new mapboxgl.Map({
   container: 'map',
   style: 'style.json',
   attributionControl: true,
-  hash: true
+  hash: true,
+  localIdeographFontFamily: "NotoSansCJKjp"
 })
 
 map.addControl(new mapboxgl.NavigationControl())
 map.addControl(new mapboxgl.ScaleControl({
   maxWidth: 200, unit: 'metric'
 }))
+
+let i = 0
+let locations = [
+{
+  center: [129.656103, 33.018015]
+},
+{
+  center: [135.791174, 34.967548]
+},
+{
+  center: [136.881814, 35.170729]
+},
+{
+  center: [137.383026, 34.762646]
+}
+]
+let N = locations.length
+
+let goto = function (location) {
+  map.flyTo({
+    center: location.center,
+    zoom: 17,
+    speed: 0.6,
+    bearing: Math.random() * 360,
+    pitch: Math.random() * 60
+  })
+}
+
+map.on('moveend', e => {
+  goto(locations[++i % N])
+})
+goto(locations[i])
 </script>
 </body>
 </html>
