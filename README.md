@@ -1,6 +1,10 @@
 # toki
 a human-optimized and faster style for experimental_bvmap from GSI
 
+- [Animated demo](https://optgeo.github.io/toki)
+- [Interactive web map](https://optgeo.github.io/toki/static.html)
+- [ChangeLog](https://optgeo.github.io/toki/changelog)
+
 ## about the name
 toki means fast in traditional Japanese. 
 
