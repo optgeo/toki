@@ -32,6 +32,52 @@
       "type": "fill"
     },
     {
+      "id": "lake",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "rgb",
+          20,
+          90,
+          255
+        ]
+      },
+      "source": "v",
+      "source-layer": "lake",
+      "type": "line"
+    },
+    {
+      "id": "landforma",
+      "layout": {},
+      "paint": {
+        "fill-color": [
+          "rgb",
+          20,
+          90,
+          255
+        ]
+      },
+      "source": "v",
+      "source-layer": "landforma",
+      "type": "fill"
+    },
+    {
+      "id": "structurea",
+      "layout": {},
+      "paint": {
+        "fill-extrusion-color": [
+          "rgb",
+          255,
+          135,
+          75
+        ],
+        "fill-extrusion-height": 5
+      },
+      "source": "v",
+      "source-layer": "structurea",
+      "type": "fill-extrusion"
+    },
+    {
       "id": "coastline",
       "layout": {
         "line-cap": "square"
@@ -75,6 +121,40 @@
       "type": "line"
     },
     {
+      "id": "river",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "rgb",
+          20,
+          90,
+          255
+        ]
+      },
+      "source": "v",
+      "source-layer": "river",
+      "type": "line"
+    },
+    {
+      "id": "searoute",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "line-dasharray": [
+          6,
+          6
+        ]
+      },
+      "source": "v",
+      "source-layer": "searoute",
+      "type": "line"
+    },
+    {
       "id": "contour",
       "layout": {
         "line-cap": "square"
@@ -101,6 +181,21 @@
       },
       "source": "v",
       "source-layer": "contour",
+      "type": "line"
+    },
+    {
+      "id": "landforml",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "rgb",
+          200,
+          160,
+          60
+        ]
+      },
+      "source": "v",
+      "source-layer": "landforml",
       "type": "line"
     },
     {
@@ -131,6 +226,71 @@
       "source": "v",
       "source-layer": "railway",
       "type": "line"
+    },
+    {
+      "id": "road",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "rgb",
+          100,
+          100,
+          100
+        ]
+      },
+      "source": "v",
+      "source-layer": "road",
+      "type": "line"
+    },
+    {
+      "id": "structurel",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "v",
+      "source-layer": "structurel",
+      "type": "line"
+    },
+    {
+      "id": "transl",
+      "layout": {},
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ]
+      },
+      "source": "v",
+      "source-layer": "transl",
+      "type": "line"
+    },
+    {
+      "id": "landformp",
+      "layout": {
+        "icon-image": "refugee"
+      },
+      "paint": {},
+      "source": "v",
+      "source-layer": "landformp",
+      "type": "symbol"
+    },
+    {
+      "id": "transp",
+      "layout": {
+        "icon-image": "bus_station"
+      },
+      "paint": {},
+      "source": "v",
+      "source-layer": "transp",
+      "type": "symbol"
     },
     {
       "id": "building",
@@ -294,7 +454,7 @@
       "type": "symbol"
     },
     {
-      "id": "annotation",
+      "id": "label",
       "layout": {
         "text-field": [
           "get",
