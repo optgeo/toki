@@ -135,16 +135,34 @@
     {
       "id": "building",
       "paint": {
-        "fill-color": [
+        "fill-extrusion-color": [
           "rgb",
           255,
           230,
           190
+        ],
+        "fill-extrusion-height": [
+          "match",
+          [
+            "get",
+            "ftCode"
+          ],
+          3101,
+          3,
+          3102,
+          15,
+          3013,
+          50,
+          3111,
+          3,
+          3112,
+          10,
+          5
         ]
       },
       "source": "v",
       "source-layer": "building",
-      "type": "fill"
+      "type": "fill-extrusion"
     },
     {
       "id": "symbol",
@@ -308,7 +326,7 @@
   ],
   "sources": {
     "v": {
-      "attribution": "GSI",
+      "attribution": "GSI <a href='changelog'>ChangeLog</a>",
       "maxzoom": 14,
       "minzoom": 4,
       "tiles": [
