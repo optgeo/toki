@@ -490,7 +490,7 @@
       "maxzoom": 14,
       "minzoom": 4,
       "tiles": [
-        "https://maps.gsi.go.jp/xyz/experimental_bvmap_tmp/{z}/{x}/{y}.pbf"
+        "https://maps.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
       ],
       "type": "vector"
     }
