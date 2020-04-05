@@ -51,10 +51,11 @@
       "layout": {},
       "paint": {
         "fill-color": [
-          "rgb",
-          20,
-          90,
-          255
+          "rgba",
+          190,
+          210,
+          255,
+          0.5
         ]
       },
       "source": "v",
@@ -325,6 +326,37 @@
       "type": "fill-extrusion"
     },
     {
+      "id": "elevation",
+      "layout": {
+        "text-field": [
+          "get",
+          "alti"
+        ],
+        "text-font": [
+          "NotoSansCJKjp-Regular"
+        ],
+        "text-size": 8
+      },
+      "paint": {
+        "text-color": [
+          "rgb",
+          0,
+          0,
+          0
+        ],
+        "text-halo-color": [
+          "rgb",
+          255,
+          255,
+          255
+        ],
+        "text-halo-width": 1
+      },
+      "source": "v",
+      "source-layer": "elevation",
+      "type": "symbol"
+    },
+    {
       "id": "symbol",
       "layout": {
         "icon-image": [
@@ -487,7 +519,7 @@
   "sources": {
     "v": {
       "attribution": "GSI <a href='changelog'>ChangeLog</a>",
-      "maxzoom": 14,
+      "maxzoom": 16,
       "minzoom": 4,
       "tiles": [
         "https://maps.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"
