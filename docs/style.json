@@ -190,16 +190,22 @@
           ]
         ],
         "line-width": [
-          "match",
+          "step",
           [
-            "get",
-            "altiFlag"
+            "zoom"
           ],
+          0.7,
+          14,
           [
-            0
-          ],
-          1.4,
-          0.7
+            "match",
+            [
+              "get",
+              "altiFlag"
+            ],
+            0,
+            1.4,
+            0.7
+          ]
         ]
       },
       "source": "v",
@@ -245,6 +251,64 @@
           "NotoSansCJKjp-Regular"
         ],
         "text-ignore-placement": true,
+        "text-offset": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          [
+            "LT",
+            "LC",
+            "LB"
+          ],
+          [
+            "literal",
+            [
+              0.5,
+              0
+            ]
+          ],
+          [
+            "RT",
+            "RC",
+            "RB"
+          ],
+          [
+            "literal",
+            [
+              -0.5,
+              0
+            ]
+          ],
+          [
+            "CT"
+          ],
+          [
+            "literal",
+            [
+              0,
+              0.5
+            ]
+          ],
+          [
+            "CB"
+          ],
+          [
+            "literal",
+            [
+              0,
+              -0.5
+            ]
+          ],
+          [
+            "literal",
+            [
+              0,
+              0
+            ]
+          ]
+        ],
         "text-size": [
           "interpolate",
           [
@@ -254,9 +318,9 @@
             "zoom"
           ],
           12,
-          8,
+          6,
           17,
-          20
+          16
         ]
       },
       "paint": {
@@ -266,14 +330,7 @@
             "get",
             "ftCode"
           ],
-          7351,
-          [
-            "rgb",
-            200,
-            160,
-            60
-          ],
-          7371,
+          7372,
           [
             "rgb",
             20,
@@ -281,11 +338,10 @@
             255
           ],
           [
-            "rgba",
+            "rgb",
             200,
             160,
-            60,
-            0
+            60
           ]
         ],
         "text-halo-color": [
