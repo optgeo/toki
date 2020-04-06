@@ -207,6 +207,99 @@
       "type": "line"
     },
     {
+      "filter": [
+        "match",
+        [
+          "get",
+          "ftCode"
+        ],
+        [
+          7352,
+          7372
+        ],
+        true,
+        false
+      ],
+      "id": "contour-symbol",
+      "layout": {
+        "symbol-placement": "line",
+        "text-allow-overlap": true,
+        "text-anchor": "center",
+        "text-field": [
+          "match",
+          [
+            "get",
+            "ftCode"
+          ],
+          7352,
+          [
+            "get",
+            "alti"
+          ],
+          [
+            "get",
+            "depth"
+          ]
+        ],
+        "text-font": [
+          "NotoSansCJKjp-Regular"
+        ],
+        "text-ignore-placement": true,
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          8,
+          17,
+          20
+        ]
+      },
+      "paint": {
+        "text-color": [
+          "match",
+          [
+            "get",
+            "ftCode"
+          ],
+          7351,
+          [
+            "rgb",
+            200,
+            160,
+            60
+          ],
+          7371,
+          [
+            "rgb",
+            20,
+            90,
+            255
+          ],
+          [
+            "rgba",
+            200,
+            160,
+            60,
+            0
+          ]
+        ],
+        "text-halo-color": [
+          "rgb",
+          190,
+          210,
+          255
+        ]
+      },
+      "source": "v",
+      "source-layer": "contour",
+      "type": "symbol"
+    },
+    {
       "id": "landforml",
       "layout": {},
       "paint": {
@@ -298,7 +391,18 @@
     {
       "id": "landformp",
       "layout": {
-        "icon-image": "refugee"
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "ftCode"
+          ],
+          5801,
+          "滝（領域）-20",
+          7601,
+          "砂礫地（領域が不明瞭な場合）-20",
+          "雨裂（下部）-20"
+        ]
       },
       "paint": {},
       "source": "v",
@@ -733,7 +837,7 @@
       "type": "vector"
     }
   },
-  "sprite": "https://un-vector-tile-toolkit.github.io/kawagoe/sprite/std",
+  "sprite": "https://unvt.github.io/toki/sprite/std",
   "version": 8,
   "zoom": 16
 }
