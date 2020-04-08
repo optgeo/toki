@@ -789,6 +789,7 @@
           ]
         ]
       },
+      "minzoom": 6,
       "source": "v",
       "source-layer": "symbol",
       "type": "symbol"
